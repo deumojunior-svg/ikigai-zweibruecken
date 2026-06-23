@@ -388,7 +388,7 @@ strong{font-weight:500;}
   display:grid;grid-template-columns:1fr auto;
   padding:28px 0;border-top:1px solid var(--border2);
   transition:background .2s;
-  align-items:start;gap:40px;
+  align-items:center;gap:40px;
 }
 .dish:hover{padding-left:12px;transition:padding .3s var(--ease);}
 .dish-name{
@@ -396,10 +396,31 @@ strong{font-weight:500;}
   color:var(--ink);margin-bottom:6px;
 }
 .dish-detail{font-size:.82rem;color:var(--muted);line-height:1.7;max-width:60ch;}
-.dish-meta{text-align:right;flex-shrink:0;}
+
+/* ── PRIX : très visibles ── */
+.dish-meta{
+  text-align:right;flex-shrink:0;
+  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+}
 .dish-price{
-  font-family:var(--f-display);font-size:1.4rem;font-weight:300;
-  color:var(--ink);display:block;margin-bottom:8px;
+  font-family:var(--f-display);
+  font-size:2rem;          /* grand */
+  font-weight:500;
+  color:var(--gold);       /* or bien visible */
+  display:block;
+  line-height:1;
+  letter-spacing:-.01em;
+  /* halo subtil pour détacher du fond */
+  text-shadow: 0 0 20px rgba(184,144,42,.18);
+}
+.dish-price-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold);color:#fff;
+  font-family:var(--f-body);font-size:.65rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:5px 14px;
+  border-radius:0;
+  white-space:nowrap;
 }
 .dish-tag{
   display:inline-block;font-size:.6rem;font-weight:500;letter-spacing:.12em;
@@ -789,8 +810,8 @@ footer{
     grid-template-columns:1fr;gap:12px;
     padding:22px 0;
   }
-  .dish-meta{text-align:left;display:flex;align-items:center;gap:12px;}
-  .dish-price{font-size:1.1rem;}
+  .dish-meta{text-align:left;flex-direction:row;align-items:center;gap:14px;}
+  .dish-price{font-size:1.5rem;}
   .dish:hover{padding-left:0;}/* disable hover indent on touch */
 
   /* Cat tabs */
@@ -1164,7 +1185,7 @@ footer{
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 13 Euro 90">13,90 €</span>
-            <span class="dish-tag sig">Empfehlung</span>
+            <span class="dish-price-badge">★ Empfehlung</span>
           </div>
         </article>
 
@@ -1191,7 +1212,7 @@ footer{
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 10 Euro 90">10,90 €</span>
-            <span class="dish-tag veg">Veg. Option</span>
+            <span class="dish-tag veg">🌿 Veg. Option</span>
           </div>
         </article>
 
@@ -1205,7 +1226,7 @@ footer{
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 14 Euro 50">14,50 €</span>
-            <span class="dish-tag sig">Neu</span>
+            <span class="dish-price-badge" style="background:var(--ink);">✦ Neu</span>
           </div>
         </article>
 
@@ -1219,7 +1240,7 @@ footer{
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 9 Euro 90">9,90 €</span>
-            <span class="dish-tag veg">Vegetarisch</span>
+            <span class="dish-tag veg">🌿 Vegetarisch</span>
           </div>
         </article>
 
@@ -1233,7 +1254,7 @@ footer{
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 16 Euro 50">16,50 €</span>
-            <span class="dish-tag hot">Scharf</span>
+            <span class="dish-price-badge" style="background:var(--accent);">🌶 Scharf</span>
           </div>
         </article>
 
