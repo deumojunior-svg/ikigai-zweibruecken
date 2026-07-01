@@ -8,48 +8,70 @@
      Instructor: Prof. Hendrik Speck
      Design inspired by: Nobu, Noma, Atomix — world-class
      restaurant website design patterns 2025
+     Structure: HTML + CSS (style.css) + JavaScript (main.js)
 ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Character Encoding -->
   <meta charset="UTF-8">
+
+  <!-- Viewport — responsive layout -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── PRIMARY SEO META TAGS ── -->
   <title>IKIGAI Zweibrücken – Sushi &amp; Asiatische Fusion-Küche | Restaurant &amp; Lieferservice</title>
-  <meta name="description" content="IKIGAI Zweibrücken – Premium Sushi &amp; Asiatisches Fusion-Restaurant in 66482 Zweibrücken. Frische Sushi-Kreationen, Wok-Gerichte &amp; Fusion-Küche. Online bestellen, Tisch reservieren oder Lieferung. Mo–Sa 12–14 &amp; 17–22 Uhr.">
-  <meta name="keywords" content="Sushi Zweibrücken, Ikigai Restaurant, Asiatisches Restaurant Zweibrücken, Fusion-Küche Zweibrücken, Sushi Lieferservice Zweibrücken, japanisches Restaurant Rheinland-Pfalz, Online Bestellung Sushi, Tischreservierung Zweibrücken, Ikigai Sushi, Asian Food Zweibrücken">
-  <meta name="abstract" content="IKIGAI – Sushi &amp; Asiatisches Fusion-Restaurant in Zweibrücken, Rheinland-Pfalz. Kulinarische Reise durch Japan &amp; Asien mit frischen Zutaten und gemütlichem Ambiente.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="audience" content="all">
-  <meta name="language" content="de">
+
+  <meta name="description"
+    content="IKIGAI Zweibrücken – Premium Sushi &amp; Asiatisches Fusion-Restaurant in 66482 Zweibrücken. Frische Sushi-Kreationen, Wok-Gerichte &amp; Fusion-Küche. Online bestellen, Tisch reservieren oder Lieferung. Mo–Sa 12–14 &amp; 17–22 Uhr.">
+
+  <meta name="keywords"
+    content="Sushi Zweibrücken, Ikigai Restaurant, Asiatisches Restaurant Zweibrücken, Fusion-Küche Zweibrücken, Sushi Lieferservice Zweibrücken, japanisches Restaurant Rheinland-Pfalz, Online Bestellung Sushi, Tischreservierung Zweibrücken, Ikigai Sushi, Asian Food Zweibrücken">
+
+  <meta name="abstract"
+    content="IKIGAI – Sushi &amp; Asiatisches Fusion-Restaurant in Zweibrücken, Rheinland-Pfalz. Kulinarische Reise durch Japan &amp; Asien mit frischen Zutaten und gemütlichem Ambiente.">
+
+  <meta name="robots"     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="audience"   content="all">
+  <meta name="language"   content="de">
   <meta name="geo.region" content="DE-RP">
   <meta name="geo.placename" content="Zweibrücken">
-  <meta name="geo.position" content="49.248;7.364">
-  <meta name="ICBM" content="49.248, 7.364">
-  <meta name="author" content="IKIGAI Zweibrücken">
-  <meta name="publisher" content="IKIGAI Zweibrücken">
-  <meta name="copyright" content="© 2025 IKIGAI Zweibrücken">
+  <meta name="geo.position"  content="49.248;7.364">
+  <meta name="ICBM"          content="49.248, 7.364">
+  <meta name="author"        content="IKIGAI Zweibrücken">
+  <meta name="publisher"     content="IKIGAI Zweibrücken">
+  <meta name="copyright"     content="© 2025 IKIGAI Zweibrücken">
   <meta name="revisit-after" content="7 days">
-  <meta name="rating" content="general">
-  <meta name="category" content="Restaurant, Sushi, Asiatische Küche">
-  <meta property="og:type" content="restaurant">
-  <meta property="og:site_name" content="IKIGAI Zweibrücken">
-  <meta property="og:title" content="IKIGAI Zweibrücken – Sushi &amp; Fusion-Küche">
+  <meta name="rating"        content="general">
+  <meta name="category"      content="Restaurant, Sushi, Asiatische Küche">
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="restaurant">
+  <meta property="og:site_name"   content="IKIGAI Zweibrücken">
+  <meta property="og:title"       content="IKIGAI Zweibrücken – Sushi &amp; Fusion-Küche">
   <meta property="og:description" content="Erleben Sie eine kulinarische Reise durch Japan und Asien. Frische Sushi-Rollen, Wok-Spezialitäten und Fusion-Gerichte in gemütlichem Ambiente.">
-  <meta property="og:url" content="https://ikigai-zweibruecken.de">
-  <meta property="og:locale" content="de_DE">
-  <meta property="og:image" content="https://ikigai-zweibruecken.de/img/upload/1713353751.png">
-  <meta property="og:image:alt" content="IKIGAI Zweibrücken Restaurant – Sushi und Fusion-Küche">
+  <meta property="og:url"         content="https://ikigai-zweibruecken.de">
+  <meta property="og:locale"      content="de_DE">
+  <meta property="og:image"       content="https://ikigai-zweibruecken.de/img/upload/1713353751.png">
+  <meta property="og:image:alt"   content="IKIGAI Zweibrücken Restaurant – Sushi und Fusion-Küche">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IKIGAI Zweibrücken – Sushi &amp; Fusion-Küche">
+  <meta property="og:image:height"content="630">
+
+  <!-- ── TWITTER CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="IKIGAI Zweibrücken – Sushi &amp; Fusion-Küche">
   <meta name="twitter:description" content="Frische Sushi-Kreationen &amp; asiatische Fusion-Küche in Zweibrücken. Jetzt online bestellen oder Tisch reservieren!">
-  <meta name="twitter:image" content="https://ikigai-zweibruecken.de/img/upload/1713353751.png">
-  <meta name="twitter:image:alt" content="IKIGAI Zweibrücken Sushi Restaurant">
+  <meta name="twitter:image"       content="https://ikigai-zweibruecken.de/img/upload/1713353751.png">
+  <meta name="twitter:image:alt"   content="IKIGAI Zweibrücken Sushi Restaurant">
+
+  <!-- ── CANONICAL ── -->
   <link rel="canonical" href="https://ikigai-zweibruecken.de">
+
+  <!-- ── STRUCTURED DATA / JSON-LD ── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "IKIGAI Zweibrücken",
-    "description": "Asiatisches Fusion-Restaurant und Sushi in Zweibrücken. Frische Sushi-Kreationen, Wok-Gerichte und Fusion-Spezialitäten.",
+    "description": "Asiatisches Fusion-Restaurant und Sushi in Zweibrücken, Rheinland-Pfalz.",
     "url": "https://ikigai-zweibruecken.de",
     "address": {
       "@type": "PostalAddress",
@@ -63,848 +85,31 @@
     "priceRange": "€€",
     "paymentAccepted": "Cash",
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "12:00", "closes": "14:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "17:00", "closes": "22:00" }
-    ]
+      { "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "12:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "17:00", "closes": "22:00" }
+    ],
+    "image": "https://ikigai-zweibruecken.de/img/upload/1713353751.png"
   }
   </script>
+
+  <!-- ── FONTS ── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap"
+        rel="stylesheet">
 
-<style>
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   TOKENS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-:root {
-  --white:   #ffffff;
-  --off:     #faf9f7;       /* warm off-white — like Noma */
-  --paper:   #f3f0ea;       /* parchment */
-  --ink:     #16140f;       /* near-black warm */
-  --ink2:    #3d3a32;       /* mid ink */
-  --muted:   #8c8880;       /* warm grey */
-  --gold:    #b8902a;       /* restrained gold — not loud */
-  --gold2:   #d4aa48;
-  --accent:  #c84b2f;       /* koi-red accent */
-  --border:  rgba(22,20,15,.1);
-  --border2: rgba(22,20,15,.06);
+  <!-- ── EXTERNAL STYLESHEET ── -->
+  <link rel="stylesheet" href="style.css">
 
-  --f-display: 'Cormorant Garamond', 'Noto Serif JP', Georgia, serif;
-  --f-body:    'Jost', 'Helvetica Neue', Arial, sans-serif;
-  --f-jp:      'Noto Serif JP', serif;
-
-  --ease:    cubic-bezier(.25,.46,.45,.94);
-  --ease2:   cubic-bezier(.16,1,.3,1);
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RESET
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%;}
-body{font-family:var(--f-body);background:var(--white);color:var(--ink);
-  line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
-img{max-width:100%;display:block;}
-a{color:inherit;text-decoration:none;}
-button{font-family:var(--f-body);cursor:pointer;}
-::selection{background:var(--gold);color:#fff;}
-::-webkit-scrollbar{width:3px;}
-::-webkit-scrollbar-track{background:var(--off);}
-::-webkit-scrollbar-thumb{background:var(--gold);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ACCESSIBILITY
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.skip{position:absolute;top:-48px;left:16px;background:var(--accent);color:#fff;
-  padding:10px 20px;font-size:.85rem;font-weight:500;z-index:9999;transition:top .2s;}
-.skip:focus{top:12px;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   LAYOUT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.wrap{max-width:1200px;margin:0 auto;padding:0 48px;}
-.wrap--narrow{max-width:860px;margin:0 auto;padding:0 48px;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   TYPOGRAPHY
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.label{
-  font-family:var(--f-body);font-size:.65rem;font-weight:500;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
-}
-h1,h2,h3{font-family:var(--f-display);font-weight:300;line-height:1.1;}
-h1{font-size:clamp(3.5rem,7vw,7.5rem);letter-spacing:-.02em;}
-h2{font-size:clamp(2.4rem,4.5vw,4.2rem);letter-spacing:-.01em;}
-h3{font-size:clamp(1.4rem,2.5vw,1.9rem);}
-em{font-style:italic;}
-strong{font-weight:500;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   NAV  — Nobu-style: transparent → frosted
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  padding:0 48px;transition:all .5s var(--ease);
-}
-#nav.up{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
-.nav-i{display:flex;align-items:center;justify-content:space-between;
-  height:80px;max-width:1200px;margin:0 auto;}
-.nav-logo{
-  font-family:var(--f-display);font-size:1.6rem;font-weight:300;
-  letter-spacing:.08em;color:var(--white);transition:color .4s;
-}
-#nav.up .nav-logo{color:var(--ink);}
-.nav-logo sup{font-size:.55rem;letter-spacing:.2em;vertical-align:super;
-  font-family:var(--f-body);font-weight:500;opacity:.6;}
-.nav-links{display:flex;gap:40px;list-style:none;align-items:center;}
-.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.14em;
-  text-transform:uppercase;color:rgba(255,255,255,.7);
-  transition:color .3s;position:relative;}
-#nav.up .nav-links a{color:var(--muted);}
-.nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;right:0;
-  height:1px;background:var(--gold);transform:scaleX(0);
-  transition:transform .3s var(--ease);transform-origin:left;}
-.nav-links a:hover::after{transform:scaleX(1);}
-.nav-links a:hover{color:var(--white);}
-#nav.up .nav-links a:hover{color:var(--ink);}
-.nav-cta{
-  font-size:.7rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  padding:11px 26px;border:1px solid rgba(255,255,255,.45);color:var(--white);
-  border-radius:0;transition:all .35s;
-}
-#nav.up .nav-cta{border-color:var(--ink);color:var(--ink);}
-.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:#fff !important;}
-.hamburger{display:none;flex-direction:column;gap:6px;background:none;border:none;padding:4px;}
-.hamburger span{display:block;width:22px;height:1px;background:currentColor;transition:var(--ease) .3s;}
-.hamburger{color:var(--white);}
-#nav.up .hamburger{color:var(--ink);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   HERO  — Full-bleed cinematic, Nobu/Noma style
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#hero{
-  min-height:100svh;position:relative;
-  display:flex;flex-direction:column;justify-content:flex-end;
-  overflow:hidden;background:#0d0c09;
-}
-/* Layered dark gradient — like fine dining sites */
-.hero-bg{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(to bottom, rgba(13,12,9,.15) 0%, rgba(13,12,9,.85) 100%),
-    linear-gradient(135deg, #1a1006 0%, #0a1a12 55%, #060810 100%);
-}
-/* Subtle grain texture */
-.hero-bg::after{
-  content:'';position:absolute;inset:0;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity:.4;pointer-events:none;
-}
-/* Large kanji — Noma-style oversized typography */
-.hero-kanji{
-  position:absolute;right:-2vw;top:50%;transform:translateY(-50%);
-  font-family:var(--f-jp);font-size:clamp(200px,28vw,420px);font-weight:200;
-  color:rgba(184,144,42,.05);line-height:1;letter-spacing:.05em;
-  pointer-events:none;user-select:none;
-  animation:float 20s ease-in-out infinite;
-}
-@keyframes float{0%,100%{transform:translateY(-50%) translateX(0);}50%{transform:translateY(-52%) translateX(-1.5%);}}
-
-/* Floating image — like Nobu's hero with editorial food photography */
-.hero-food{
-  position:absolute;right:8%;top:50%;transform:translateY(-50%);
-  width:clamp(280px,38vw,580px);
-  border-radius:0;/* No radius — editorial */
-  overflow:hidden;
-  box-shadow:0 60px 120px rgba(0,0,0,.55);
-  opacity:0;animation:imgReveal 1.4s var(--ease2) .8s forwards;
-}
-@keyframes imgReveal{
-  from{opacity:0;transform:translateY(-48%) scale(.97);}
-  to{opacity:1;transform:translateY(-50%) scale(1);}
-}
-.hero-food img{
-  width:100%;aspect-ratio:3/4;object-fit:cover;
-  filter:brightness(.85) saturate(1.1);
-  transition:transform 8s ease;
-}
-.hero-food img:hover{transform:scale(1.04);}
-
-/* Gold vertical line — editorial accent */
-.hero-vline{
-  position:absolute;left:48px;top:0;bottom:0;
-  width:1px;background:linear-gradient(to bottom,transparent,rgba(184,144,42,.4) 30%,rgba(184,144,42,.4) 70%,transparent);
-}
-
-.hero-content{
-  position:relative;z-index:2;
-  padding:0 48px 100px;max-width:700px;
-  opacity:0;animation:contentUp 1.2s var(--ease2) .3s forwards;
-}
-@keyframes contentUp{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
-}
-.hero-eyebrow{
-  display:flex;align-items:center;gap:16px;margin-bottom:32px;
-}
-.hero-eyebrow .label{color:rgba(184,144,42,.9);}
-.hero-eyebrow-line{flex:1;max-width:60px;height:1px;background:rgba(184,144,42,.4);}
-#hero h1{color:var(--white);margin-bottom:28px;}
-#hero h1 em{color:var(--gold2);}
-.hero-sub{
-  font-size:clamp(.9rem,1.2vw,1.05rem);color:rgba(255,255,255,.55);
-  line-height:1.9;margin-bottom:52px;max-width:48ch;font-weight:300;
-}
-.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:10px;
-  background:var(--gold);color:#fff;
-  font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  padding:16px 36px;transition:all .35s var(--ease);
-}
-.btn-primary:hover{background:var(--gold2);transform:translateY(-2px);
-  box-shadow:0 16px 40px rgba(184,144,42,.35);}
-.btn-secondary{
-  font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  color:rgba(255,255,255,.55);
-  display:inline-flex;align-items:center;gap:8px;
-  transition:color .3s;
-}
-.btn-secondary:hover{color:rgba(255,255,255,.9);}
-.btn-arrow{font-size:.9rem;transition:transform .3s;}
-.btn-secondary:hover .btn-arrow{transform:translateX(4px);}
-
-/* Bottom bar — Nobu-style info strip */
-.hero-strip{
-  position:absolute;bottom:0;left:0;right:0;z-index:2;
-  border-top:1px solid rgba(255,255,255,.08);
-  display:grid;grid-template-columns:repeat(3,1fr);
-}
-.strip-item{
-  padding:20px 48px;border-right:1px solid rgba(255,255,255,.08);
-  display:flex;flex-direction:column;gap:4px;
-}
-.strip-item:last-child{border-right:none;}
-.strip-item .label{color:rgba(255,255,255,.3);}
-.strip-item span{font-size:.9rem;color:rgba(255,255,255,.75);font-weight:300;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   PHILOSOPHY BAND — like Noma's "why" section
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#philosophy{
-  background:var(--off);padding:100px 0;
-  border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);
-}
-.phi-grid{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:center;}
-.phi-kanji-block{text-align:center;}
-.phi-kanji-large{
-  font-family:var(--f-jp);font-size:clamp(80px,10vw,140px);
-  font-weight:200;color:var(--ink);line-height:1;
-  opacity:.12;
-}
-.phi-right{}
-.phi-right .label{margin-bottom:20px;display:block;}
-.phi-right blockquote{
-  font-family:var(--f-display);font-size:clamp(1.5rem,2.5vw,2.2rem);
-  font-weight:300;line-height:1.5;color:var(--ink);font-style:italic;
-  margin-bottom:28px;
-}
-.phi-right blockquote::before{content:'"';color:var(--gold);font-size:2em;
-  line-height:0;vertical-align:-.4em;margin-right:4px;}
-.phi-right p{font-size:.95rem;color:var(--muted);line-height:1.9;max-width:54ch;}
-.phi-right strong{color:var(--ink2);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ABOUT — Editorial 2-col like fine dining
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#about{padding:120px 0;background:var(--white);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;}
-/* Left: oversized section number + title */
-.about-left{padding-right:80px;border-right:1px solid var(--border);}
-.about-num{
-  font-family:var(--f-display);font-size:clamp(80px,10vw,130px);
-  font-weight:200;color:var(--paper);line-height:1;margin-bottom:-16px;
-  user-select:none;
-}
-.about-left h2{color:var(--ink);margin-bottom:32px;}
-.about-left h2 em{display:block;}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:64px;}
-.stat-item{}
-.stat-num{
-  font-family:var(--f-display);font-size:2.8rem;font-weight:300;
-  color:var(--ink);display:block;line-height:1;margin-bottom:6px;
-}
-.stat-item .label{display:block;}
-
-/* Right: editorial text + mosaic */
-.about-right{padding-left:80px;display:flex;flex-direction:column;gap:40px;}
-.about-right p{font-size:1rem;color:var(--ink2);line-height:1.9;font-weight:300;}
-.about-right strong{color:var(--ink);font-weight:500;}
-.about-right em{color:var(--gold);font-style:italic;}
-
-/* Mosaic — 3 images like editorial food magazine */
-.mosaic{display:grid;grid-template-columns:3fr 2fr;grid-template-rows:240px 160px;gap:8px;}
-.mos{border-radius:0;overflow:hidden;position:relative;}
-.mos img{width:100%;height:100%;object-fit:cover;
-  transition:transform .8s var(--ease);filter:brightness(.88);}
-.mos:hover img{transform:scale(1.04);}
-.mos-a{grid-row:span 2;}
-.mos-caption{
-  position:absolute;bottom:10px;left:12px;right:12px;
-  font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;
-  color:rgba(255,255,255,.55);font-weight:400;
-}
-/* CSS-only visual when images fail */
-.mos-a{background:linear-gradient(150deg,#2a1408,#0a1e0a);}
-.mos-b{background:linear-gradient(135deg,#0e0e1e,#1a0a28);}
-.mos-c{background:linear-gradient(135deg,#1a0800,#2e1200);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   MENU — Clean, like Noma / Atomix omakase
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#menu{background:var(--off);padding:120px 0;}
-.menu-header{margin-bottom:80px;display:grid;grid-template-columns:1fr 1fr;
-  gap:60px;align-items:end;}
-.menu-header h2{color:var(--ink);}
-.menu-header-right .label{margin-bottom:16px;display:block;}
-.menu-header-right p{font-size:.9rem;color:var(--muted);line-height:1.85;}
-
-/* Category row — minimal like Atomix */
-.cat-row{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:0;}
-.cat-btn{
-  padding:14px 28px;font-size:.7rem;font-weight:500;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--muted);background:none;border:none;
-  border-bottom:2px solid transparent;transition:all .3s;
-  position:relative;bottom:-1px;
-}
-.cat-btn:hover{color:var(--ink);}
-.cat-btn.on{color:var(--ink);border-bottom-color:var(--gold);}
-
-/* Dish list — editorial list like fine dining menus */
-.dish-list{border-bottom:1px solid var(--border);}
-.dish{
-  display:grid;grid-template-columns:1fr auto;
-  padding:28px 0;border-top:1px solid var(--border2);
-  transition:background .2s;
-  align-items:center;gap:40px;
-}
-.dish:hover{padding-left:12px;transition:padding .3s var(--ease);}
-.dish-name{
-  font-family:var(--f-display);font-size:1.25rem;font-weight:300;
-  color:var(--ink);margin-bottom:6px;
-}
-.dish-detail{font-size:.82rem;color:var(--muted);line-height:1.7;max-width:60ch;}
-
-/* ── PRIX : très visibles ── */
-.dish-meta{
-  text-align:right;flex-shrink:0;
-  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
-}
-.dish-price{
-  font-family:var(--f-display);
-  font-size:2rem;          /* grand */
-  font-weight:500;
-  color:var(--gold);       /* or bien visible */
-  display:block;
-  line-height:1;
-  letter-spacing:-.01em;
-  /* halo subtil pour détacher du fond */
-  text-shadow: 0 0 20px rgba(184,144,42,.18);
-}
-.dish-price-badge{
-  display:inline-flex;align-items:center;gap:6px;
-  background:var(--gold);color:#fff;
-  font-family:var(--f-body);font-size:.65rem;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  padding:5px 14px;
-  border-radius:0;
-  white-space:nowrap;
-}
-.dish-tag{
-  display:inline-block;font-size:.6rem;font-weight:500;letter-spacing:.12em;
-  text-transform:uppercase;padding:3px 10px;
-  border:1px solid var(--border);color:var(--muted);
-}
-.dish-tag.veg{border-color:rgba(58,120,60,.3);color:rgb(48,100,50);}
-.dish-tag.hot{border-color:rgba(200,75,47,.3);color:var(--accent);}
-.dish-tag.sig{border-color:rgba(184,144,42,.3);color:var(--gold);}
-
-.menu-foot{margin-top:52px;text-align:center;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   FULL-BLEED IMAGE BREAK — cinematic separator
-   Like Nobu's mid-page editorial imagery
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#break{
-  height:60vh;min-height:400px;position:relative;overflow:hidden;
-  background:linear-gradient(135deg,#1a0a00,#0a1a0d);
-}
-.break-img{
-  position:absolute;inset:0;
-}
-.break-img img{width:100%;height:100%;object-fit:cover;opacity:.45;
-  transform:scale(1.05);transition:transform 8s ease;}
-#break:hover .break-img img{transform:scale(1);}
-.break-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to right,rgba(13,12,9,.75) 0%,rgba(13,12,9,.1) 60%);
-}
-.break-content{
-  position:absolute;bottom:60px;left:0;right:0;
-  display:flex;align-items:flex-end;justify-content:space-between;
-  padding:0 48px;
-}
-.break-quote{
-  font-family:var(--f-display);font-size:clamp(1.6rem,3vw,2.8rem);
-  font-weight:300;color:var(--white);font-style:italic;
-  max-width:50ch;line-height:1.35;
-}
-.break-cta{flex-shrink:0;margin-left:40px;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   HOURS + DELIVERY  — clean like Nobu info
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#info{padding:120px 0;background:var(--white);}
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;}
-
-/* Hours panel */
-.hours-panel .label{margin-bottom:24px;display:block;}
-.hours-panel h2{color:var(--ink);margin-bottom:48px;}
-.hours-table{width:100%;border-collapse:collapse;}
-.hours-table tr{border-top:1px solid var(--border2);}
-.hours-table tr:last-child{border-bottom:1px solid var(--border2);}
-.hours-table td{padding:18px 0;font-size:.9rem;font-weight:300;color:var(--ink2);vertical-align:top;}
-.hours-table td:last-child{text-align:right;color:var(--ink);}
-.hours-table .off{color:var(--muted);}
-.cash-note{
-  margin-top:32px;display:inline-flex;align-items:center;gap:8px;
-  font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--accent);border-top:1px solid rgba(200,75,47,.2);
-  padding-top:16px;
-}
-
-/* Delivery steps */
-.delivery-panel .label{margin-bottom:24px;display:block;}
-.delivery-panel h2{color:var(--ink);margin-bottom:48px;}
-.delivery-steps{display:flex;flex-direction:column;gap:0;}
-.d-step{
-  display:flex;gap:28px;align-items:flex-start;
-  padding:24px 0;border-top:1px solid var(--border2);
-}
-.d-step:last-child{border-bottom:1px solid var(--border2);}
-.d-num{
-  font-family:var(--f-display);font-size:2rem;font-weight:200;
-  color:var(--paper);line-height:1;flex-shrink:0;width:32px;
-  transition:color .3s;
-}
-.d-step:hover .d-num{color:var(--gold);}
-.d-body h4{font-size:.95rem;font-weight:500;color:var(--ink);margin-bottom:4px;}
-.d-body p{font-size:.85rem;color:var(--muted);line-height:1.7;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RESERVATION — full-width split like high-end
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#reserve{background:var(--off);padding:120px 0;}
-.reserve-grid{display:grid;grid-template-columns:5fr 4fr;gap:100px;align-items:start;}
-.reserve-left .label{margin-bottom:20px;display:block;}
-.reserve-left h2{color:var(--ink);margin-bottom:24px;}
-.reserve-left > p{font-size:.95rem;color:var(--muted);line-height:1.9;margin-bottom:52px;}
-.perks{display:flex;flex-direction:column;gap:28px;}
-.perk{display:grid;grid-template-columns:28px 1fr;gap:16px;align-items:start;}
-.perk-num{
-  font-family:var(--f-display);font-size:1.3rem;font-weight:200;
-  color:var(--gold);line-height:1;
-}
-.perk h4{font-size:.9rem;font-weight:500;color:var(--ink);margin-bottom:4px;}
-.perk p{font-size:.82rem;color:var(--muted);line-height:1.7;}
-
-/* Form — minimal, no visual clutter */
-.form-wrap{}
-.form-wrap h3{
-  font-family:var(--f-display);font-size:1.8rem;font-weight:300;
-  color:var(--ink);margin-bottom:36px;
-}
-.fg{margin-bottom:20px;}
-.fg label{display:block;font-size:.65rem;font-weight:500;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
-.fg input,.fg select,.fg textarea{
-  width:100%;padding:13px 0;
-  border:none;border-bottom:1px solid var(--border);
-  background:transparent;color:var(--ink);
-  font-family:var(--f-body);font-size:.95rem;font-weight:300;
-  outline:none;transition:border-color .3s;
-  border-radius:0;-webkit-appearance:none;
-}
-.fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238c8880'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 0 center;padding-right:20px;}
-.fg input:focus,.fg select:focus,.fg textarea:focus{border-bottom-color:var(--gold);}
-.fg input::placeholder,.fg textarea::placeholder{color:rgba(22,20,15,.25);}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-.btn-form{
-  margin-top:8px;width:100%;padding:16px;
-  background:var(--ink);color:var(--white);border:none;
-  font-family:var(--f-body);font-size:.72rem;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;
-  cursor:pointer;transition:all .35s var(--ease);
-}
-.btn-form:hover{background:var(--gold);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   REVIEWS — minimal quote cards
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#reviews{padding:120px 0;background:var(--white);}
-.rev-header{margin-bottom:72px;}
-.rev-header h2{color:var(--ink);}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);
-  gap:0;border:1px solid var(--border);}
-.rev-card{padding:44px 40px;border-right:1px solid var(--border);}
-.rev-card:last-child{border-right:none;}
-.rev-stars{color:var(--gold);font-size:.7rem;letter-spacing:4px;margin-bottom:24px;}
-.rev-text{
-  font-family:var(--f-display);font-size:1.05rem;font-weight:300;
-  font-style:italic;color:var(--ink2);line-height:1.75;margin-bottom:32px;
-}
-.rev-text::before{content:'"';color:var(--gold);}
-.rev-text::after{content:'"';color:var(--gold);}
-.rev-author{font-size:.72rem;font-weight:500;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--ink);}
-.rev-platform{font-size:.65rem;color:var(--muted);margin-top:4px;letter-spacing:.06em;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   CONTACT — split editorial
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-#contact{padding:120px 0;background:var(--off);
-  border-top:1px solid var(--border2);}
-.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:100px;align-items:start;}
-.contact-left h2{color:var(--ink);margin-bottom:52px;}
-.contact-list{list-style:none;display:flex;flex-direction:column;gap:0;}
-.c-item{display:grid;grid-template-columns:120px 1fr;gap:20px;
-  padding:24px 0;border-top:1px solid var(--border2);}
-.c-item:last-child{border-bottom:1px solid var(--border2);}
-.c-item .label{display:block;margin-top:2px;}
-.c-item p,.c-item address p{font-size:.92rem;color:var(--ink2);line-height:1.8;font-style:normal;font-weight:300;}
-.c-item a{color:var(--gold);transition:opacity .2s;}
-.c-item a:hover{opacity:.7;}
-
-/* Map placeholder — refined grid art */
-.map-panel{
-  background:var(--paper);border:1px solid var(--border);
-  height:380px;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:20px;
-  position:relative;overflow:hidden;
-}
-.map-panel::before{
-  content:'';position:absolute;inset:0;
-  background:
-    repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(22,20,15,.04) 61px),
-    repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(22,20,15,.04) 61px);
-}
-.map-icon{font-size:2rem;position:relative;z-index:1;opacity:.4;}
-.map-name{font-family:var(--f-display);font-size:1.3rem;font-weight:300;
-  color:var(--ink);position:relative;z-index:1;}
-.map-addr{font-size:.8rem;color:var(--muted);position:relative;z-index:1;text-align:center;}
-.map-btn{
-  position:relative;z-index:1;margin-top:8px;
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--gold);border:1px solid rgba(184,144,42,.35);
-  padding:10px 22px;transition:all .3s;
-}
-.map-btn:hover{background:rgba(184,144,42,.08);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   FOOTER — minimal Noma-style
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-footer{
-  background:var(--ink);padding:80px 0 40px;
-  border-top:1px solid rgba(255,255,255,.06);
-}
-.footer-top{
-  display:grid;grid-template-columns:2fr 1fr 1fr;gap:80px;
-  padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08);
-  margin-bottom:36px;
-}
-.footer-brand .footer-logo{
-  font-family:var(--f-display);font-size:1.8rem;font-weight:300;
-  color:var(--white);letter-spacing:.08em;margin-bottom:20px;display:block;
-}
-.footer-brand .footer-logo sup{font-size:.4em;letter-spacing:.2em;font-family:var(--f-body);font-weight:400;opacity:.5;}
-.footer-brand p{font-size:.83rem;color:rgba(255,255,255,.35);line-height:1.85;max-width:36ch;}
-.f-col h5{font-size:.65rem;font-weight:500;letter-spacing:.2em;
-  text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:20px;}
-.f-col ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
-.f-col a{font-size:.85rem;color:rgba(255,255,255,.45);
-  transition:color .3s;font-weight:300;}
-.f-col a:hover{color:rgba(255,255,255,.85);}
-.footer-bottom{
-  display:flex;justify-content:space-between;align-items:center;
-  flex-wrap:wrap;gap:12px;
-}
-.footer-bottom p{font-size:.72rem;color:rgba(255,255,255,.2);}
-.footer-bottom a{color:rgba(255,255,255,.25);transition:color .3s;}
-.footer-bottom a:hover{color:rgba(255,255,255,.55);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   REVEAL ANIMATIONS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.r{opacity:0;transform:translateY(24px);
-  transition:opacity .8s var(--ease2),transform .8s var(--ease2);}
-.r.in{opacity:1;transform:none;}
-.r[data-d="1"]{transition-delay:.1s;}
-.r[data-d="2"]{transition-delay:.2s;}
-.r[data-d="3"]{transition-delay:.3s;}
-.r[data-d="4"]{transition-delay:.4s;}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   MOBILE NAV DRAWER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.nav-drawer{
-  position:fixed;inset:0;z-index:190;
-  background:var(--ink);
-  display:flex;flex-direction:column;justify-content:center;align-items:center;
-  gap:0;
-  transform:translateX(100%);
-  transition:transform .45s cubic-bezier(.77,0,.18,1);
-}
-.nav-drawer.open{transform:translateX(0);}
-.nav-drawer ul{list-style:none;text-align:center;width:100%;}
-.nav-drawer li{border-bottom:1px solid rgba(255,255,255,.07);}
-.nav-drawer a{
-  display:block;padding:20px 40px;
-  font-family:var(--f-display);font-size:clamp(1.4rem,5vw,2rem);
-  font-weight:300;color:rgba(255,255,255,.75);letter-spacing:.04em;
-  transition:color .25s;
-}
-.nav-drawer a:hover{color:var(--gold2);}
-.nav-drawer-cta{
-  margin-top:32px;
-  display:inline-flex;align-items:center;gap:10px;
-  background:var(--gold);color:#fff;
-  font-size:.75rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  padding:14px 36px;transition:background .3s;
-}
-.nav-drawer-cta:hover{background:var(--gold2);}
-.drawer-close{
-  position:absolute;top:24px;right:24px;
-  background:none;border:none;cursor:pointer;
-  font-size:1.5rem;color:rgba(255,255,255,.5);
-  line-height:1;padding:8px;transition:color .2s;
-}
-.drawer-close:hover{color:var(--white);}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RESPONSIVE — TABLET  (≤1024px)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-@media(max-width:1024px){
-  /* Layout */
-  .wrap,.wrap--narrow{padding:0 32px;}
-  #nav{padding:0 32px;}
-
-  /* Sections */
-  #philosophy,#about,#menu,#info,#reserve,#reviews,#contact{padding:80px 0;}
-
-  /* Nav — hide links, show hamburger */
-  .nav-links{display:none;}
-  .hamburger{display:flex;}
-
-  /* Grids → single column */
-  .phi-grid{grid-template-columns:1fr;gap:40px;}
-  .phi-kanji-block{display:none;}/* hide giant kanji on tablet */
-
-  .about-grid{grid-template-columns:1fr;gap:0;}
-  .about-left{
-    padding-right:0;padding-bottom:60px;
-    border-right:none;border-bottom:1px solid var(--border2);
-  }
-  .about-right{padding-left:0;padding-top:60px;}
-  .about-stats{grid-template-columns:repeat(4,1fr);}
-
-  .menu-header{grid-template-columns:1fr;gap:28px;}
-
-  .info-grid{grid-template-columns:1fr;gap:64px;}
-
-  .reserve-grid{grid-template-columns:1fr;gap:64px;}
-
-  .rev-grid{grid-template-columns:1fr 1fr;}
-  .rev-card:last-child{
-    grid-column:span 2;border-right:none;
-    border-top:1px solid var(--border);
-  }
-
-  .contact-grid{grid-template-columns:1fr;gap:60px;}
-
-  .footer-top{grid-template-columns:1fr 1fr;gap:48px;}
-  .footer-brand{grid-column:span 2;}
-
-  /* Hero */
-  .hero-food{display:none;}
-  .hero-kanji{font-size:clamp(120px,20vw,220px);}
-  .hero-content{padding:0 32px 200px;max-width:100%;}
-  .hero-vline{left:32px;}
-
-  /* Hero strip → 1 col */
-  .hero-strip{grid-template-columns:1fr;}
-  .strip-item{
-    border-right:none;
-    border-bottom:1px solid rgba(255,255,255,.08);
-    padding:16px 32px;
-  }
-  .strip-item:last-child{border-bottom:none;}
-
-  /* Break */
-  #break{height:50vh;}
-  .break-content{flex-direction:column;align-items:flex-start;gap:24px;padding:0 32px;}
-  .break-cta{margin-left:0;}
-
-  /* Mosaic */
-  .mosaic{grid-template-rows:200px 140px;}
-
-  /* Category tabs — scrollable */
-  .cat-row{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;white-space:nowrap;}
-  .cat-row::-webkit-scrollbar{height:2px;}
-  .cat-btn{flex-shrink:0;}
-
-  /* Contact list */
-  .c-item{grid-template-columns:100px 1fr;}
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RESPONSIVE — MOBILE  (≤640px)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-@media(max-width:640px){
-  /* Global */
-  .wrap,.wrap--narrow{padding:0 20px;}
-  #nav{padding:0 20px;}
-  #philosophy,#about,#menu,#info,#reserve,#reviews,#contact{padding:64px 0;}
-
-  /* Typography */
-  h1{font-size:clamp(2.4rem,11vw,3.6rem);}
-  h2{font-size:clamp(1.8rem,7vw,2.6rem);}
-  .about-num{font-size:clamp(56px,16vw,96px);}
-
-  /* Hero */
-  .hero-content{padding:0 20px 260px;}
-  .hero-vline{display:none;}
-  .hero-kanji{display:none;}
-  .hero-eyebrow-line{display:none;}
-  .hero-sub{font-size:.9rem;}
-  .hero-actions{flex-direction:column;align-items:flex-start;gap:16px;}
-  .btn-primary{width:100%;justify-content:center;padding:15px 24px;}
-  .hero-strip{display:none;}/* Replace with compact info section on mobile */
-
-  /* Philosophy */
-  .phi-right blockquote{font-size:clamp(1.2rem,5vw,1.7rem);}
-
-  /* About stats → 2×2 */
-  .about-stats{grid-template-columns:1fr 1fr;gap:24px;}
-  .stat-num{font-size:2rem;}
-
-  /* Mosaic → stacked */
-  .mosaic{grid-template-columns:1fr;grid-template-rows:220px 160px 140px;}
-  .mos-a{grid-row:auto;}
-
-  /* Menu dish → stack name + price */
-  .dish{
-    grid-template-columns:1fr;gap:12px;
-    padding:22px 0;
-  }
-  .dish-meta{text-align:left;flex-direction:row;align-items:center;gap:14px;}
-  .dish-price{font-size:1.5rem;}
-  .dish:hover{padding-left:0;}/* disable hover indent on touch */
-
-  /* Cat tabs */
-  .cat-btn{padding:12px 18px;font-size:.65rem;}
-
-  /* Form */
-  .form-row{grid-template-columns:1fr;}
-  .form-wrap h3{font-size:1.4rem;}
-
-  /* Perks */
-  .perk{grid-template-columns:24px 1fr;gap:12px;}
-  .perk-num{font-size:1.1rem;}
-
-  /* Reviews → 1 col */
-  .rev-grid{grid-template-columns:1fr;border:none;gap:1px;background:var(--border);}
-  .rev-card{border-right:none;border-bottom:none;padding:32px 24px;}
-  .rev-card:last-child{border-bottom:none;}
-
-  /* Hours table */
-  .hours-table td{font-size:.82rem;padding:14px 0;}
-
-  /* Delivery steps */
-  .d-step{gap:18px;padding:18px 0;}
-  .d-num{font-size:1.6rem;}
-
-  /* Contact list */
-  .c-item{grid-template-columns:1fr;gap:6px;padding:18px 0;}
-
-  /* Map */
-  .map-panel{height:280px;}
-
-  /* Footer */
-  .footer-top{grid-template-columns:1fr;gap:40px;}
-  .footer-brand{grid-column:auto;}
-  footer{padding:60px 0 32px;}
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;}
-
-  /* Break section */
-  #break{height:60vw;min-height:280px;}
-  .break-content{bottom:32px;padding:0 20px;}
-  .break-quote{font-size:clamp(1.1rem,4.5vw,1.6rem);}
-
-  /* Strip items */
-  .strip-item{padding:14px 20px;}
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RESPONSIVE — SMALL MOBILE  (≤380px)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-@media(max-width:380px){
-  h1{font-size:2.2rem;}
-  h2{font-size:1.7rem;}
-  .hero-content{padding:0 16px 240px;}
-  .wrap,.wrap--narrow{padding:0 16px;}
-  #nav{padding:0 16px;}
-  .nav-logo{font-size:1.3rem;}
-  .about-stats{grid-template-columns:1fr 1fr;gap:16px;}
-  .stat-num{font-size:1.7rem;}
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   REDUCED MOTION
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none !important;transition:none !important;}
-  .r{opacity:1;transform:none;}
-}
-
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   PRINT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-@media print{
-  #nav,.hero-strip,.hero-food,.btn-primary,.btn-secondary,.btn-form,
-  #break,.nav-drawer,.hamburger{display:none;}
-  body{background:#fff;color:#000;}
-  #hero{min-height:auto;background:none;}
-  .hero-bg,.hero-kanji,.hero-vline{display:none;}
-  .hero-content{padding:20px;opacity:1;animation:none;}
-  h1,h2,h3{color:#000 !important;}
-  .about-num{color:#eee !important;}
-  footer{background:#fff;border-top:1px solid #ccc;}
-  .footer-brand p,.f-col a,.footer-bottom p{color:#555;}
-  .footer-logo{color:#000 !important;}
-  .phi-kanji-large{color:#ccc !important;opacity:1;}
-  .dish{page-break-inside:avoid;}
-  .rev-card{border:1px solid #ddd;}
-}
-</style>
 </head>
 
 <body>
 
-<!-- Accessibility: skip navigation -->
+<!-- Skip navigation — accessibility -->
 <a class="skip" href="#main">Zum Hauptinhalt springen</a>
 
 <!-- ══════════════════════════════════════
@@ -943,22 +148,19 @@ footer{
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════
-     MOBILE NAV DRAWER
-══════════════════════════════════════ -->
+<!-- ── MOBILE DRAWER ── -->
 <div id="nav-drawer" class="nav-drawer" role="dialog" aria-modal="true" aria-label="Mobiles Navigationsmenü">
   <button class="drawer-close" id="drawer-close" aria-label="Menü schließen">✕</button>
   <ul>
-    <li><a href="#about"   class="drawer-link" title="Über das Restaurant IKIGAI Zweibrücken">Über uns</a></li>
+    <li><a href="#about"   class="drawer-link" title="Über IKIGAI Zweibrücken">Über uns</a></li>
     <li><a href="#menu"    class="drawer-link" title="Speisekarte IKIGAI">Speisekarte</a></li>
-    <li><a href="#info"    class="drawer-link" title="Öffnungszeiten IKIGAI Zweibrücken">Info</a></li>
+    <li><a href="#info"    class="drawer-link" title="Öffnungszeiten IKIGAI">Info</a></li>
     <li><a href="#reserve" class="drawer-link" title="Tischreservierung IKIGAI">Reservierung</a></li>
-    <li><a href="#contact" class="drawer-link" title="Kontakt IKIGAI Zweibrücken">Kontakt</a></li>
+    <li><a href="#contact" class="drawer-link" title="Kontakt IKIGAI">Kontakt</a></li>
   </ul>
   <a href="https://ikigai-zweibruecken.de/ordering"
      class="nav-drawer-cta"
-     title="Sushi online bestellen bei IKIGAI Zweibrücken"
-     rel="noopener">
+     title="Sushi online bestellen bei IKIGAI Zweibrücken" rel="noopener">
     Jetzt bestellen →
   </a>
 </div>
@@ -969,58 +171,60 @@ footer{
 <main id="main">
 
   <!-- ── HERO ── -->
-  <section id="hero" aria-label="IKIGAI Zweibrücken – Sushi und Fusion-Restaurant Willkommen">
+  <section id="hero" aria-label="IKIGAI Zweibrücken – Willkommen im Sushi und Fusion-Restaurant">
 
-    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-bg"    aria-hidden="true"></div>
     <div class="hero-vline" aria-hidden="true"></div>
+    <div class="hero-kanji" aria-hidden="true">生き甲斐</div>
 
-    <!-- Floating food image (right side) — editorial style -->
+    <!-- Editorial food photography — right panel -->
     <div class="hero-food" aria-hidden="true">
       <img src="https://ikigai-zweibruecken.de/img/upload/1729073720.png"
-           alt="Premium Sushi-Auswahl im IKIGAI Zweibrücken – handgefertigte Nigiri, Maki und Signature Rolls"
+           alt="Premium Sushi-Auswahl im IKIGAI Zweibrücken – handgefertigte Nigiri, Maki und Signature Rolls auf eleganter Servierplatte"
            title="IKIGAI Zweibrücken – Premium Sushi und Fusion-Küche"
            width="580" height="773" loading="eager"
            onerror="this.closest('.hero-food').style.display='none'">
     </div>
 
-    <!-- Large kanji watermark -->
-    <div class="hero-kanji" aria-hidden="true">生き甲斐</div>
-
-    <!-- Main content -->
+    <!-- Hero content -->
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="label">Zweibrücken · 66482 · Rheinland-Pfalz</span>
         <div class="hero-eyebrow-line" aria-hidden="true"></div>
       </div>
 
-      <!-- H1: Primary keyword — Sushi + city -->
+      <!-- H1: Primary keyword — Sushi + Zweibrücken -->
       <h1>Sushi.<br><em>Fusion.</em><br>Zweibrücken.</h1>
 
       <p class="hero-sub">
-        Eine <strong>kulinarische Reise durch Japan und Asien</strong> – 
-        frische Sushi-Kreationen, handgefertigte Rollen und asiatische 
+        Eine <strong>kulinarische Reise durch Japan und Asien</strong> –
+        frische Sushi-Kreationen, handgefertigte Rollen und asiatische
         Fusion-Spezialitäten in gemütlichem Ambiente.
       </p>
 
       <div class="hero-actions">
         <a href="https://ikigai-zweibruecken.de/ordering"
-           class="btn-primary"
+           class="btn btn-primary"
            title="Sushi online bestellen – Lieferung oder Abholung bei IKIGAI Zweibrücken"
            rel="noopener">
-          Jetzt bestellen
-          <span class="btn-arrow" aria-hidden="true">→</span>
+          Jetzt bestellen <span class="btn-arrow" aria-hidden="true">→</span>
         </a>
         <a href="#reserve"
-           class="btn-secondary"
+           class="btn btn-ghost"
            title="Tisch reservieren im IKIGAI Restaurant Zweibrücken">
-          Tisch reservieren
-          <span class="btn-arrow" aria-hidden="true">↓</span>
+          Tisch reservieren <span class="btn-arrow" aria-hidden="true">↓</span>
         </a>
       </div>
     </div>
 
-    <!-- Info strip at bottom -->
-    <div class="hero-strip" aria-label="Schnellübersicht Öffnungszeiten und Lieferservice">
+    <!-- Scroll hint -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      Scroll
+    </div>
+
+    <!-- Info strip -->
+    <div class="hero-strip" aria-label="Öffnungszeiten und Zahlung im Überblick">
       <div class="strip-item">
         <span class="label">Mittagessen</span>
         <span>Mo – Sa · <time datetime="12:00-14:00">12:00 – 14:00</time></span>
@@ -1035,7 +239,7 @@ footer{
       </div>
     </div>
 
-  </section>
+  </section><!-- /#hero -->
 
   <!-- ── PHILOSOPHY ── -->
   <section id="philosophy" aria-labelledby="phi-heading">
@@ -1052,23 +256,23 @@ footer{
             Das, was das Leben lebenswert macht
           </blockquote>
           <p>
-            <strong>Ikigai</strong> (生き甲斐) ist das japanische Konzept für 
-            Sinn, Freude und Zweck. Wir übersetzen diese Philosophie auf den Teller: 
-            jedes Gericht mit Leidenschaft und Sorgfalt zubereitet, 
+            <strong>Ikigai</strong> (生き甲斐) ist das japanische Konzept für
+            Sinn, Freude und Zweck. Wir übersetzen diese Philosophie auf den Teller:
+            jedes Gericht mit <em>Leidenschaft</em> und Sorgfalt zubereitet,
             jeder Besuch ein unvergesslicher Moment.
           </p>
         </div>
 
       </div>
     </div>
-  </section>
+  </section><!-- /#philosophy -->
 
   <!-- ── ABOUT ── -->
   <section id="about" aria-labelledby="about-heading">
     <div class="wrap">
       <div class="about-grid">
 
-        <!-- Left: oversized number + headline + stats -->
+        <!-- Left: number + title + stats -->
         <div class="about-left r">
           <div class="about-num" aria-hidden="true">01</div>
           <h2 id="about-heading">
@@ -1097,22 +301,22 @@ footer{
           </div>
         </div>
 
-        <!-- Right: editorial text + images -->
+        <!-- Right: text + mosaic -->
         <div class="about-right r" data-d="2">
           <p>
-            Willkommen im <strong>IKIGAI</strong> – Ihrem asiatischen Fusion-Restaurant 
-            im Herzen von Zweibrücken. Wir laden Sie herzlich ein, bei uns einen 
-            unvergesslichen Abend zu verbringen, voller Aromen, die Sie direkt nach 
+            Willkommen im <strong>IKIGAI</strong> – Ihrem asiatischen Fusion-Restaurant
+            im Herzen von Zweibrücken. Wir laden Sie herzlich ein, bei uns einen
+            unvergesslichen Abend zu verbringen, voller Aromen, die Sie direkt nach
             Japan und Asien entführen.
           </p>
           <p>
-            Ob Sie einen <em>besonderen Anlass feiern</em>, mit Freunden und Familie 
-            zusammenkommen oder einfach nur das Leben und gutes Essen genießen möchten – 
+            Ob Sie einen <em>besonderen Anlass feiern</em>, mit Freunden und Familie
+            zusammenkommen oder einfach nur das Leben und gutes Essen genießen möchten –
             bei uns finden Sie den perfekten Ort dafür.
           </p>
 
-          <!-- Mosaic with real restaurant images + alt text -->
-          <div class="mosaic" role="img" aria-label="Impressionen aus dem IKIGAI Restaurant Zweibrücken – Sushi, Wok-Gerichte und gemütliches Ambiente">
+          <!-- Mosaic images with SEO alt attributes -->
+          <div class="mosaic" role="img" aria-label="Impressionen aus dem IKIGAI Restaurant Zweibrücken">
             <div class="mos mos-a">
               <img src="https://ikigai-zweibruecken.de/img/upload/1729073720.png"
                    alt="Handgefertigte Sushi-Rollen und Nigiri auf eleganter Servierplatte im IKIGAI Zweibrücken"
@@ -1131,7 +335,7 @@ footer{
             </div>
             <div class="mos mos-c">
               <img src="https://ikigai-zweibruecken.de/img/upload/1698938662.gif"
-                   alt="Gemütliches japanisches Restaurant-Ambiente im IKIGAI Zweibrücken – ideal für besondere Anlässe und Events"
+                   alt="Gemütliches japanisches Restaurant-Ambiente im IKIGAI Zweibrücken – ideal für besondere Anlässe"
                    title="Restaurant-Ambiente IKIGAI Zweibrücken"
                    width="240" height="160" loading="lazy"
                    onerror="this.style.display='none'">
@@ -1142,7 +346,7 @@ footer{
 
       </div>
     </div>
-  </section>
+  </section><!-- /#about -->
 
   <!-- ── MENU ── -->
   <section id="menu" aria-labelledby="menu-heading">
@@ -1154,38 +358,38 @@ footer{
           <h2 id="menu-heading">Speise&shy;karte</h2>
         </div>
         <div class="menu-header-right">
-          <span class="label">Frisch zubereitet</span>
+          <span class="label">Frisch zubereitet täglich</span>
           <p>
-            Jedes Gericht wird täglich frisch zubereitet – 
-            mit hochwertigen Zutaten, japanischer Technik und 
+            Jedes Gericht wird täglich frisch zubereitet –
+            mit hochwertigen Zutaten, japanischer Technik und
             kreativen Fusion-Ideen aus ganz Asien.
           </p>
         </div>
       </div>
 
-      <!-- Category navigation -->
+      <!-- Category tabs — controlled by main.js -->
       <div class="cat-row r" role="tablist" aria-label="Speisekategorien">
-        <button class="cat-btn on" role="tab" aria-selected="true"  type="button">Sushi Klassiker</button>
-        <button class="cat-btn"    role="tab" aria-selected="false" type="button">Maki &amp; Rollen</button>
-        <button class="cat-btn"    role="tab" aria-selected="false" type="button">Warme Gerichte</button>
-        <button class="cat-btn"    role="tab" aria-selected="false" type="button">Vorspeisen</button>
-        <button class="cat-btn"    role="tab" aria-selected="false" type="button">Getränke</button>
+        <button class="cat-btn on" role="tab" aria-selected="true"  type="button" data-cat="sushi">Sushi Klassiker</button>
+        <button class="cat-btn"    role="tab" aria-selected="false" type="button" data-cat="maki">Maki &amp; Rollen</button>
+        <button class="cat-btn"    role="tab" aria-selected="false" type="button" data-cat="warm">Warme Gerichte</button>
+        <button class="cat-btn"    role="tab" aria-selected="false" type="button" data-cat="vorspeise">Vorspeisen</button>
+        <button class="cat-btn"    role="tab" aria-selected="false" type="button" data-cat="getraenke">Getränke</button>
       </div>
 
-      <!-- Dish list — editorial format, like Noma/Atomix -->
-      <div class="dish-list r" role="tabpanel" aria-label="Sushi Klassiker Auswahl">
+      <!-- Sushi Klassiker — default visible -->
+      <div class="dish-list dish-section r" data-cat="sushi" role="tabpanel" aria-label="Sushi Klassiker">
 
         <article class="dish">
           <div>
             <h3 class="dish-name">Nigiri Lachs</h3>
             <p class="dish-detail">
-              Handgefertigter Nigiri mit frischem Lachs auf gewürztem Sushi-Reis — 
+              Handgefertigter Nigiri mit frischem Lachs auf gewürztem Sushi-Reis —
               serviert mit eingelegtem Ingwer, Wasabi und Sojasauce. (8 Stück)
             </p>
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 13 Euro 90">13,90 €</span>
-            <span class="dish-price-badge">★ Empfehlung</span>
+            <span class="dish-badge badge-gold">★ Empfehlung</span>
           </div>
         </article>
 
@@ -1193,7 +397,7 @@ footer{
           <div>
             <h3 class="dish-name">Thunfisch Sashimi</h3>
             <p class="dish-detail">
-              Hauchdünn geschnittener, frischer Thunfisch nach japanischer Tradition — 
+              Hauchdünn geschnittener, frischer Thunfisch nach japanischer Tradition —
               pur, zartschmelzend, ohne Reis. (10 Stück)
             </p>
           </div>
@@ -1206,8 +410,8 @@ footer{
           <div>
             <h3 class="dish-name">California Roll</h3>
             <p class="dish-detail">
-              Krabben-Fleisch, reife Avocado und frische Gurke in geröstetem Nori, 
-              garniert mit geröstetem Sesam. Der Klassiker schlechthin. (8 Stück)
+              Krabben-Fleisch, reife Avocado und frische Gurke in geröstetem Nori,
+              garniert mit geröstetem Sesam. (8 Stück)
             </p>
           </div>
           <div class="dish-meta">
@@ -1220,13 +424,13 @@ footer{
           <div>
             <h3 class="dish-name">Dragon Roll Special</h3>
             <p class="dish-detail">
-              Knusprige Garnelen-Tempura-Rolle, bekrönt mit hauchdünnem Avocado-Fächer, 
+              Knusprige Garnelen-Tempura-Rolle, bekrönt mit hauchdünnem Avocado-Fächer,
               Unagi-Glasur und geröstetem Sesam. (8 Stück)
             </p>
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 14 Euro 50">14,50 €</span>
-            <span class="dish-price-badge" style="background:var(--ink);">✦ Neu</span>
+            <span class="dish-badge badge-dark">✦ Neu</span>
           </div>
         </article>
 
@@ -1234,8 +438,8 @@ footer{
           <div>
             <h3 class="dish-name">Gemüse-Sushi</h3>
             <p class="dish-detail">
-              Gurke, cremige Avocado, bunte Paprika, Karotte und Shiitake-Pilze 
-              auf gewürztem Sushi-Reis. Leicht, frisch und vollwertig. (10 Stück)
+              Gurke, cremige Avocado, bunte Paprika, Karotte und Shiitake-Pilze
+              auf gewürztem Sushi-Reis. (10 Stück)
             </p>
           </div>
           <div class="dish-meta">
@@ -1248,21 +452,150 @@ footer{
           <div>
             <h3 class="dish-name">Ikigai Signature Roll</h3>
             <p class="dish-detail">
-              Frischer Lachs, cremiger Frischkäse, reife Avocado — flambierter Lachs 
+              Frischer Lachs, cremiger Frischkäse, reife Avocado — flambierter Lachs
               obenauf, Wasabi-Mayo, Tobiko-Kaviar. <strong>Nur bei IKIGAI Zweibrücken.</strong> (8 Stück)
             </p>
           </div>
           <div class="dish-meta">
             <span class="dish-price" aria-label="Preis 16 Euro 50">16,50 €</span>
-            <span class="dish-price-badge" style="background:var(--accent);">🌶 Scharf</span>
+            <span class="dish-badge badge-accent">🌶 Scharf</span>
           </div>
         </article>
 
-      </div><!-- /.dish-list -->
+      </div><!-- /.dish-section sushi -->
+
+      <!-- Maki & Rollen — hidden by default -->
+      <div class="dish-list dish-section r" data-cat="maki" style="display:none" role="tabpanel" aria-label="Maki und Rollen">
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Sake Maki</h3>
+            <p class="dish-detail">6 Stück Lachsrolle im Nori, mit Sesam.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 7 Euro 50">7,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Tempura Roll</h3>
+            <p class="dish-detail">Knusprige Garnelen-Tempura in Nori, mit Teriyaki-Sauce. (8 Stück)</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 12 Euro 90">12,90 €</span>
+            <span class="dish-badge badge-gold">★ Beliebt</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Rainbow Roll</h3>
+            <p class="dish-detail">California Roll mit verschiedenen Fischsorten obendrauf — ein buntes Kunstwerk. (8 Stück)</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 15 Euro 50">15,50 €</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Warme Gerichte -->
+      <div class="dish-list dish-section r" data-cat="warm" style="display:none" role="tabpanel" aria-label="Warme Gerichte">
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Wok-Gemüse mit Tofu</h3>
+            <p class="dish-detail">Saisonales Gemüse, knuspriger Tofu, Ingwer-Sojasauce, mit Jasminreis.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 11 Euro 90">11,90 €</span>
+            <span class="dish-tag veg">🌿 Vegan</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Teriyaki-Lachs</h3>
+            <p class="dish-detail">Gegrillter Lachs in hausgemachter Teriyaki-Glasur, mit Edamame und Reis.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 16 Euro 90">16,90 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Ramen Tonkotsu</h3>
+            <p class="dish-detail">Reichhaltige Schweineknochenbrühe, Weizennudeln, Chashu-Schwein, Nori, Ei, Frühlingszwiebeln.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 14 Euro 50">14,50 €</span>
+            <span class="dish-badge badge-gold">★ Empfehlung</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Vorspeisen -->
+      <div class="dish-list dish-section r" data-cat="vorspeise" style="display:none" role="tabpanel" aria-label="Vorspeisen">
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Edamame</h3>
+            <p class="dish-detail">Gedämpfte Sojabohnen mit Meersalz.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 4 Euro 50">4,50 €</span>
+            <span class="dish-tag veg">🌿 Vegan</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Gyoza (6 Stück)</h3>
+            <p class="dish-detail">Gegrillte Teigtaschen mit Schwein und Kohl, Ponzu-Dip.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 7 Euro 90">7,90 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Miso-Suppe</h3>
+            <p class="dish-detail">Traditionelle Misobrühe mit Wakame, Tofu und Frühlingszwiebeln.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 3 Euro 90">3,90 €</span>
+            <span class="dish-tag veg">🌿 Vegan</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Getränke -->
+      <div class="dish-list dish-section r" data-cat="getraenke" style="display:none" role="tabpanel" aria-label="Getränke">
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Grüner Tee (Sencha)</h3>
+            <p class="dish-detail">Japanischer Sencha, heiß oder kalt.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 3 Euro 50">3,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Sake (kalt / warm)</h3>
+            <p class="dish-detail">Japanischer Reiswein, 100ml.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 5 Euro 90">5,90 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div>
+            <h3 class="dish-name">Limonade / Wasser</h3>
+            <p class="dish-detail">Frische Limonaden oder stilles / sparkling Wasser, 0,33l.</p>
+          </div>
+          <div class="dish-meta">
+            <span class="dish-price" aria-label="Preis 2 Euro 90">2,90 €</span>
+          </div>
+        </article>
+      </div>
 
       <div class="menu-foot r">
         <a href="https://ikigai-zweibruecken.de/ordering"
-           class="btn-primary"
+           class="btn btn-dark"
            title="Vollständige Speisekarte anzeigen und Sushi online bestellen bei IKIGAI Zweibrücken"
            rel="noopener">
           Vollständige Speisekarte &amp; Online-Bestellung →
@@ -1270,9 +603,9 @@ footer{
       </div>
 
     </div>
-  </section>
+  </section><!-- /#menu -->
 
-  <!-- ── FULL-BLEED EDITORIAL IMAGE BREAK ── -->
+  <!-- ── EDITORIAL IMAGE BREAK ── -->
   <section id="break" aria-label="Atmosphärische Impression des IKIGAI Restaurants">
     <div class="break-img">
       <img src="https://ikigai-zweibruecken.de/img/upload/1729073720.png"
@@ -1287,8 +620,7 @@ footer{
         Jeder Teller ist eine Einladung — zu verweilen, zu genießen, zu sein.
       </blockquote>
       <div class="break-cta">
-        <a href="#reserve"
-           class="btn-primary"
+        <a href="#reserve" class="btn btn-primary"
            title="Tisch reservieren im IKIGAI Zweibrücken">
           Tisch reservieren
         </a>
@@ -1301,7 +633,7 @@ footer{
     <div class="wrap">
       <div class="info-grid">
 
-        <!-- Opening hours -->
+        <!-- Hours -->
         <div class="hours-panel r">
           <span class="label">Öffnungszeiten &amp; Zahlung</span>
           <div class="about-num" aria-hidden="true">03</div>
@@ -1335,7 +667,7 @@ footer{
           <div class="about-num" aria-hidden="true">04</div>
           <h2>Sushi<br><em>zu Ihnen</em></h2>
 
-          <ol class="delivery-steps" aria-label="Wie die Online-Bestellung funktioniert">
+          <ol class="d-steps" aria-label="Wie die Online-Bestellung funktioniert">
             <li class="d-step">
               <div class="d-num" aria-hidden="true">1</div>
               <div class="d-body">
@@ -1360,24 +692,23 @@ footer{
           </ol>
 
           <a href="https://ikigai-zweibruecken.de/ordering"
-             class="btn-primary"
-             style="display:inline-flex;align-items:center;gap:10px;margin-top:48px;"
-             title="Sushi online bestellen – Lieferung und Abholung IKIGAI Zweibrücken"
-             rel="noopener">
+             class="btn btn-primary"
+             style="display:inline-flex; margin-top:48px;"
+             title="Sushi online bestellen – IKIGAI Zweibrücken" rel="noopener">
             Online bestellen →
           </a>
         </div>
 
       </div>
     </div>
-  </section>
+  </section><!-- /#info -->
 
   <!-- ── RESERVATION ── -->
   <section id="reserve" aria-labelledby="reserve-heading">
     <div class="wrap">
       <div class="reserve-grid">
 
-        <!-- Left info -->
+        <!-- Info -->
         <div class="reserve-left r">
           <span class="label">Tischreservierung</span>
           <div class="about-num" aria-hidden="true">05</div>
@@ -1385,7 +716,7 @@ footer{
             Reservieren Sie<br><em>Ihren Tisch</em>
           </h2>
           <p>
-            Planen Sie einen besonderen Abend, ein Familienessen oder eine 
+            Planen Sie einen besonderen Abend, ein Familienessen oder eine
             Gruppenfeier? Wir gestalten Ihren Besuch unvergesslich.
           </p>
 
@@ -1414,12 +745,14 @@ footer{
           </ul>
         </div>
 
-        <!-- Reservation form -->
+        <!-- Form — handled by main.js -->
         <div class="form-wrap r" data-d="2">
           <h3>Tisch reservieren</h3>
 
-          <form method="post"
+          <form id="reserve-form"
+                method="post"
                 action="https://ikigai-zweibruecken.de/reservationform"
+                novalidate
                 aria-label="Tischreservierungsformular IKIGAI Zweibrücken">
 
             <div class="form-row">
@@ -1441,19 +774,19 @@ footer{
               <label for="email">E-Mail *</label>
               <input type="email" id="email" name="email"
                 placeholder="ihre@email.de" required autocomplete="email"
-                aria-required="true" aria-label="Ihre E-Mail-Adresse für die Reservierungsbestätigung">
+                aria-required="true" aria-label="Ihre E-Mail-Adresse">
             </div>
 
             <div class="form-row">
               <div class="fg">
                 <label for="datum">Datum *</label>
                 <input type="date" id="datum" name="datum" required
-                  aria-required="true" aria-label="Gewünschtes Reservierungsdatum">
+                  aria-required="true" aria-label="Reservierungsdatum">
               </div>
               <div class="fg">
                 <label for="uhrzeit">Uhrzeit *</label>
                 <select id="uhrzeit" name="uhrzeit" required
-                  aria-required="true" aria-label="Gewünschte Reservierungszeit">
+                  aria-required="true" aria-label="Reservierungszeit">
                   <optgroup label="Mittagessen">
                     <option value="12:00">12:00 Uhr</option>
                     <option value="12:30">12:30 Uhr</option>
@@ -1473,13 +806,13 @@ footer{
             <div class="fg">
               <label for="personen">Anzahl Personen *</label>
               <select id="personen" name="personen" required
-                aria-required="true" aria-label="Anzahl der Personen für die Reservierung">
+                aria-required="true" aria-label="Personenanzahl">
                 <option value="1">1 Person</option>
                 <option value="2" selected>2 Personen</option>
                 <option value="3">3 Personen</option>
                 <option value="4">4 Personen</option>
                 <option value="5">5 Personen</option>
-                <option value="6+">6+ Personen (Gruppenanfrage)</option>
+                <option value="6+">6+ Personen (Gruppe)</option>
               </select>
             </div>
 
@@ -1487,20 +820,23 @@ footer{
               <label for="wunsch">Besondere Wünsche</label>
               <textarea id="wunsch" name="wunsch" rows="2"
                 placeholder="Allergien, Anlass, Sitzwünsche…"
-                aria-label="Ihre besonderen Wünsche und Anmerkungen"></textarea>
+                aria-label="Ihre besonderen Wünsche"></textarea>
             </div>
 
             <button type="submit" class="btn-form"
-              aria-label="Tischreservierung jetzt absenden bei IKIGAI Zweibrücken">
+              aria-label="Tischreservierung absenden">
               Reservierung bestätigen
             </button>
+
+            <!-- Message area — toggled by main.js -->
+            <p id="form-msg" class="form-msg" role="alert" aria-live="polite"></p>
 
           </form>
         </div>
 
       </div>
     </div>
-  </section>
+  </section><!-- /#reserve -->
 
   <!-- ── REVIEWS ── -->
   <section id="reviews" aria-labelledby="rev-heading">
@@ -1516,7 +852,7 @@ footer{
         <article class="rev-card r" itemscope itemtype="https://schema.org/Review">
           <div class="rev-stars" aria-label="5 von 5 Sternen">★★★★★</div>
           <p class="rev-text" itemprop="reviewBody">
-            Das beste Sushi in Zweibrücken und Umgebung! Die Zutaten sind immer frisch, 
+            Das beste Sushi in Zweibrücken und Umgebung! Die Zutaten sind immer frisch,
             die Rollen kunstvoll zubereitet und das Ambiente einfach gemütlich.
           </p>
           <div class="rev-author" itemprop="author">Sarah M.</div>
@@ -1526,7 +862,7 @@ footer{
         <article class="rev-card r" data-d="1" itemscope itemtype="https://schema.org/Review">
           <div class="rev-stars" aria-label="5 von 5 Sternen">★★★★★</div>
           <p class="rev-text" itemprop="reviewBody">
-            Die Ikigai-Signature-Roll ist ein Muss — so etwas Besonderes 
+            Die Ikigai-Signature-Roll ist ein Muss — so etwas Besonderes
             bekommt man sonst nirgends. Freundliches Personal und schneller Service.
           </p>
           <div class="rev-author" itemprop="author">Thomas K.</div>
@@ -1536,7 +872,7 @@ footer{
         <article class="rev-card r" data-d="2" itemscope itemtype="https://schema.org/Review">
           <div class="rev-stars" aria-label="5 von 5 Sternen">★★★★★</div>
           <p class="rev-text" itemprop="reviewBody">
-            Wir haben unseren Geburtstag hier gefeiert — Partyraum und 
+            Wir haben unseren Geburtstag hier gefeiert — Partyraum und
             Sushi-Platten waren perfekt. Absolute Empfehlung für Gruppenevents!
           </p>
           <div class="rev-author" itemprop="author">Familie Berger</div>
@@ -1545,7 +881,7 @@ footer{
 
       </div>
     </div>
-  </section>
+  </section><!-- /#reviews -->
 
   <!-- ── CONTACT ── -->
   <section id="contact" aria-labelledby="contact-heading">
@@ -1574,7 +910,6 @@ footer{
         <!-- Contact details -->
         <address style="font-style:normal;" class="r" data-d="2">
           <h2 id="contact-heading">So finden<br><em>Sie uns</em></h2>
-
           <ul class="contact-list">
             <li class="c-item" itemscope itemtype="https://schema.org/PostalAddress">
               <span class="label">Adresse</span>
@@ -1602,16 +937,9 @@ footer{
               <span class="label">Online</span>
               <p>
                 <a href="https://ikigai-zweibruecken.de"
-                   title="IKIGAI Zweibrücken – Offizielle Website"
-                   rel="noopener">ikigai-zweibruecken.de</a>
-              </p>
-            </li>
-            <li class="c-item">
-              <span class="label">Bestellen</span>
-              <p>
-                <a href="https://ikigai-zweibruecken.de/ordering"
-                   title="Sushi online bestellen – Lieferservice IKIGAI"
-                   rel="noopener">Online-Bestellung →</a>
+                   title="IKIGAI Zweibrücken – Offizielle Website" rel="noopener">
+                  ikigai-zweibruecken.de
+                </a>
               </p>
             </li>
           </ul>
@@ -1619,12 +947,12 @@ footer{
 
       </div>
     </div>
-  </section>
+  </section><!-- /#contact -->
 
 </main>
 
 <!-- ══════════════════════════════════════
-     FOOTER — minimal, like Noma
+     FOOTER
 ══════════════════════════════════════ -->
 <footer role="contentinfo" aria-label="Seitenende – Navigation und rechtliche Hinweise">
   <div class="wrap">
@@ -1637,28 +965,28 @@ footer{
           IKIGAI <sup>生き甲斐</sup>
         </a>
         <p>
-          Ihr asiatisches Fusion-Restaurant &amp; Sushi-Restaurant 
-          in Zweibrücken, Rheinland-Pfalz. Kulinarische Reise durch Japan 
+          Ihr asiatisches Fusion-Restaurant &amp; Sushi-Restaurant
+          in Zweibrücken, Rheinland-Pfalz. Kulinarische Reise durch Japan
           und Asien — frische Zutaten, gemütliches Ambiente.
         </p>
       </div>
 
-      <nav class="f-col" aria-label="Footer-Navigation Hauptmenü">
+      <nav class="f-col" aria-label="Footer-Navigation">
         <h5>Navigation</h5>
         <ul>
-          <li><a href="#about"   title="Über IKIGAI Zweibrücken">Über uns</a></li>
-          <li><a href="#menu"    title="Speisekarte Sushi Zweibrücken">Speisekarte</a></li>
-          <li><a href="#info"    title="Öffnungszeiten IKIGAI">Öffnungszeiten</a></li>
-          <li><a href="#reserve" title="Tischreservierung IKIGAI">Reservierung</a></li>
-          <li><a href="#contact" title="Anfahrt IKIGAI Zweibrücken">Anfahrt</a></li>
+          <li><a href="#about"   title="Über IKIGAI">Über uns</a></li>
+          <li><a href="#menu"    title="Speisekarte IKIGAI">Speisekarte</a></li>
+          <li><a href="#info"    title="Öffnungszeiten">Öffnungszeiten</a></li>
+          <li><a href="#reserve" title="Tischreservierung">Reservierung</a></li>
+          <li><a href="#contact" title="Kontakt und Anfahrt">Anfahrt</a></li>
           <li>
             <a href="https://ikigai-zweibruecken.de/ordering"
-               title="Sushi online bestellen" rel="noopener">Online bestellen</a>
+               title="Online bestellen" rel="noopener">Online bestellen</a>
           </li>
         </ul>
       </nav>
 
-      <nav class="f-col" aria-label="Footer-Navigation Rechtliches">
+      <nav class="f-col" aria-label="Rechtliche Links">
         <h5>Rechtliches</h5>
         <ul>
           <li>
@@ -1672,135 +1000,26 @@ footer{
         </ul>
       </nav>
 
-    </div><!-- /.footer-top -->
+    </div>
 
     <div class="footer-bottom">
-      <p>© 2025 IKIGAI Zweibrücken — Sushi &amp; Asiatisches Fusion-Restaurant.</p>
+      <p>© 2025 IKIGAI Zweibrücken — Sushi &amp; Asiatisches Fusion-Restaurant. Alle Rechte vorbehalten.</p>
       <p>
         <a href="https://ikigai-zweibruecken.de/impressum">Impressum</a>
         &nbsp;·&nbsp;
         <a href="https://ikigai-zweibruecken.de/datenschutz">Datenschutz</a>
         &nbsp;·&nbsp;
-        <span>OnPage-Optimierung · Hochschule Kaiserslautern · Online Marketing · Prof. Hendrik Speck</span>
+        <span>OnPage SEO · Hochschule Kaiserslautern · Prof. Hendrik Speck</span>
       </p>
     </div>
-
   </div>
 </footer>
 
-<!-- ══════════════════════════════════════
-     JAVASCRIPT — progressive enhancement
-══════════════════════════════════════ -->
-<script>
-/* ── Nav: transparent → frosted on scroll ── */
-(function(){
-  var nav = document.getElementById('nav');
-  function tick(){ nav.classList.toggle('up', window.scrollY > 60); }
-  window.addEventListener('scroll', tick, {passive:true});
-  tick();
-}());
+<!-- ── BACK TO TOP ── -->
+<button class="back-to-top" aria-label="Zurück nach oben scrollen">↑</button>
 
-/* ── Mobile drawer ── */
-(function(){
-  var btn     = document.querySelector('.hamburger');
-  var drawer  = document.getElementById('nav-drawer');
-  var closeBtn= document.getElementById('drawer-close');
-  var links   = drawer.querySelectorAll('.drawer-link, .nav-drawer-cta');
-  var body    = document.body;
-
-  function open(){
-    drawer.classList.add('open');
-    btn.setAttribute('aria-expanded','true');
-    body.style.overflow='hidden';
-    closeBtn.focus();
-  }
-  function close(){
-    drawer.classList.remove('open');
-    btn.setAttribute('aria-expanded','false');
-    body.style.overflow='';
-    btn.focus();
-  }
-
-  btn.addEventListener('click', open);
-  closeBtn.addEventListener('click', close);
-
-  /* Close on any drawer link click */
-  links.forEach(function(l){ l.addEventListener('click', close); });
-
-  /* Close on Escape key */
-  document.addEventListener('keydown', function(e){
-    if(e.key==='Escape' && drawer.classList.contains('open')) close();
-  });
-
-  /* Swipe left to close on mobile */
-  var startX = 0;
-  drawer.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; },{passive:true});
-  drawer.addEventListener('touchend',   function(e){
-    if(e.changedTouches[0].clientX - startX > 60) close();
-  },{passive:true});
-}());
-
-/* ── Smooth scroll with nav offset ── */
-(function(){
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var t = document.querySelector(this.getAttribute('href'));
-      if(!t) return;
-      e.preventDefault();
-      window.scrollTo({top: t.getBoundingClientRect().top + window.pageYOffset - 88, behavior:'smooth'});
-    });
-  });
-}());
-
-/* ── Scroll reveal (IntersectionObserver) ── */
-(function(){
-  if(!('IntersectionObserver' in window)){
-    document.querySelectorAll('.r').forEach(function(el){el.classList.add('in');});
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  },{threshold:.08, rootMargin:'0px 0px -24px 0px'});
-  document.querySelectorAll('.r').forEach(function(el){ io.observe(el); });
-}());
-
-/* ── Menu category tabs ── */
-(function(){
-  var btns = document.querySelectorAll('.cat-btn');
-  btns.forEach(function(b){
-    b.addEventListener('click', function(){
-      btns.forEach(function(x){ x.classList.remove('on'); x.setAttribute('aria-selected','false'); });
-      this.classList.add('on'); this.setAttribute('aria-selected','true');
-      /* scroll active tab into view on mobile */
-      this.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
-    });
-  });
-}());
-
-/* ── Form validation ── */
-(function(){
-  var form = document.querySelector('form');
-  if(!form) return;
-  form.addEventListener('submit', function(e){
-    var ok = true;
-    this.querySelectorAll('[required]').forEach(function(f){
-      if(!f.value.trim()){ ok=false; f.style.borderBottomColor='#c84b2f'; }
-      else f.style.borderBottomColor='';
-    });
-    if(!ok){
-      e.preventDefault();
-      var err = form.querySelector('.ferr') || document.createElement('p');
-      err.className='ferr';
-      err.style.cssText='color:#c84b2f;font-size:.78rem;margin-top:14px;letter-spacing:.04em;';
-      err.setAttribute('role','alert');
-      err.textContent='Bitte alle Pflichtfelder (*) ausfüllen.';
-      form.appendChild(err);
-    }
-  });
-}());
-</script>
+<!-- ── EXTERNAL JAVASCRIPT (deferred — loads after DOM) ── -->
+<script src="main.js" defer></script>
 
 </body>
 </html>
